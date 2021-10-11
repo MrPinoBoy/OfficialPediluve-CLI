@@ -4,4 +4,8 @@ This simple package returns the holidays anywhere in the world, you just need to
 
 # Installation
 
-`npm install @mrpinoboy/worldholydays`
+`npm install -g @mrpinoboy/worldholidays`
+
+# How to use it
+Just type: 
+`worldholidays <any country> <any year>`

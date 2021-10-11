@@ -12,7 +12,9 @@ const countryCode = getCode(country)
 const holiday = async() => {
     try {
         const response = await axios.get(`https://date.nager.at/api/v3/publicholidays/${year}/${countryCode}`)
-        console.log(response.data)
+        response.data.forEach(holyday => {
+            console.log(`${holyday.date} ${holyday.name}`)
+        });
     } catch (error) {
         console.error(error)
     }
